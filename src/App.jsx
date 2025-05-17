@@ -10,8 +10,8 @@ import Login from "./Pages/Login";
 import Product from "./Pages/Product";
 import Footer from "./Components/Footer";
 import MyProfile from "./Pages/MyProfile";
-import PlaceOrder from "./Pages/placeOrder";
 import SearchBar from "./Components/SearchBar";
+import PlaceOrder from "./Pages/placeOrder";
 
 const App = () => {
   return (
