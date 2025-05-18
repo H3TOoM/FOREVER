@@ -76,7 +76,7 @@ const MyProfile = () => {
                       <img
                         src={item.image[0]}
                         alt={item.name}
-                        className="w-16 h-16 object-cover rounded"
+                        className={`w-16 h-16 object-cover rounded ${item.category === "Women" && 'blur-sm'}`}
                       />
                       <div>
                         <p className="font-medium">{item.name}</p>
