@@ -3,26 +3,26 @@ import { assets } from '../assets/assets'
 
 const Header = () => {
   return (
-    <div className="grid grid-cols-2 border border-gray-400 mb-10 max-md:grid-cols-1">
+    <div className="flex flex-col sm:flex-row border border-gray-400">
       {/* Left section */}
-      <div className="text-[#414141] flex flex-col justify-center ml-25 max-md:m-auto max-md:my-5">
-        <div className="flex items-center gap-2">
-          <p className="w-10 h-0.5 bg-gray-600"></p>
-          <p className="text-md font-medium">OUR BESTSELLERS</p>
-        </div>
+      <div className="w-full sm:w-1/2 flex items-center justify-center py-10 sm:py-0">
+        <div className="text-[#414141]">
+          <div className="flex items-center gap-2">
+            <p className="w-8 md:w-11 h-[2px] bg-[#414141]"></p>
+            <p className=" font-medium text-sm md:text-base">OUR BESTSELLERS</p>
+          </div>
 
-        <h1 className="prata-regular text-5xl sm:py-3 lg:text-5xl leading-relaxed">Latest Arrivals</h1>
+          <h1 className="prata-regular text-3xl sm:py-3 lg:text-5xl leading-relaxed">Latest Arrivals</h1>
 
-        <div className="flex items-center gap-2">
-          <p className="text-xl">SHOP NOW</p>
-          <p className="w-10 h-0.5 bg-gray-600"></p>
+          <div className="flex items-center gap-2">
+            <p className="font-semibold text-sm md:text-base">SHOP NOW</p>
+            <p className="w-8 md:w-11 h-[1px] bg-[#414141]"></p>
+          </div>
         </div>
       </div>
 
       {/* Right section */}
-      <div>
-        <img src={assets.hero_img} />
-      </div>
+        <img src={assets.hero_img} className="w-full sm:w-1/2"/>
     </div>
   );
 };
