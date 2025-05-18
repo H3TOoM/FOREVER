@@ -84,7 +84,8 @@ const Cart = () => {
                   <img
                     src={item.image[0]}
                     alt={item.name}
-                    className='w-16 sm:w-20' />
+                    className={`w-16 sm:w-20 ${item.category === "Women" && 'blur-sm'}`}
+                  />
                   <div>
                     <p
                       className='text-xs sm:text-lg font-medium'>
